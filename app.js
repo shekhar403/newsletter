@@ -7,6 +7,10 @@ const mailchimp = require("@mailchimp/mailchimp_marketing");
 // Your previous code
 const express = require("express");
 const bodyParser = require("body-parser");
+require('dotenv').config()
+
+console.log(process.env.S3_BUCKET);
+console.log("process.env");
  
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
@@ -24,13 +28,13 @@ app.post("/", function(req, res){
 //Setting up MailChimp
     mailchimp.setConfig({
 //write your api key 
-      apiKey: "d69850e8e2ed964fc8171137d1597d99-us10",
+      apiKey: process.env.APP_KEY,
 //and server prefix
-      server: "us10",
+      server: process.env.SERVER,
     });
     
 // write your audience/list_id here
-    const list_id = "642e0f35f2";
+    const list_id = process.env.LIST_ID;
  
 // All the below code are from mailchimp docs
     const run = async () => {
