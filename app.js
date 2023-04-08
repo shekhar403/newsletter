@@ -13,8 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
  
 app.get("/", function (req, res) {
-    // res.sendFile(__dirname + "/signup.html"); 
-    res.send("hello world") 
+    res.sendFile(__dirname + "/signup.html");
 });
  
 app.post("/", function(req, res){
