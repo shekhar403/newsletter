@@ -30,7 +30,7 @@ app.post("/", function(req, res){
     });
     
 // write your audience/list_id here
-    const list_id = "cc951b2e83";
+    const list_id = "642e0f35f2";
  
 // All the below code are from mailchimp docs
     const run = async () => {
