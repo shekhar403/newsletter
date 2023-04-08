@@ -24,9 +24,9 @@ app.post("/", function(req, res){
 //Setting up MailChimp
     mailchimp.setConfig({
 //write your api key 
-      apiKey: "41dbc74600d116fc5d2e83f3a760db18-us21",
+      apiKey: "d69850e8e2ed964fc8171137d1597d99-us10",
 //and server prefix
-      server: "us21",
+      server: "us10",
     });
     
 // write your audience/list_id here
