@@ -12,7 +12,7 @@ body {
 }
 
 .form-signin {
-  max-width: 337px;
+  max-width: 350px;
   padding: 15px;
 }
 
@@ -21,18 +21,28 @@ body {
 }
 
 .top {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  margin-bottom: 5px;
 }
 
 .middle {
-    margin-bottom: -1px;
-    border-radius: 0;
+    margin-bottom: 5px;
 }
 
 .bottom {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: inline-block; /* magic sauce */
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* magic sauce II */
+}
+
+video { background: white; }
